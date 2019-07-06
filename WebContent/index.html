@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <title>Rozgrywki ligowe</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <h1>Rozgrywki ligowe</h1>
+    </div>
+    <div id="content">
+        <div id="content-ui">
+            <output id="content-input">
+                <input class="fname" type="text" placeholder="Imię"/>
+                <input class="lname" type="text" placeholder="Nazwisko"/>
+                <input class="position" type="text" placeholder="Pozycja" list="lposition" maxlength="3"/>
+                <input class="age" type="number" placeholder="Wiek" min="5" max="50"/>
+                <input class="clubId" type="text" placeholder="Klub (do dodania)" list="lclubs"/>
+            </output>
+            <select name="table">
+                <option value="player">Zawodnik</option>
+                <option value="club">Klub</option>
+                <option value="match">Mecz</option>
+                <option value="goal">Bramka</option>
+            </select>
+            <button type="button" id="button-get" value="player">Wyszukaj</button>
+            <button type="button" id="button-post">Dodaj</button>
+        </div>
+        <div id="content-data">
+            
+        </div>
+    </div>
+    <div id="footer">
+        <span id="footer-span">Stworzone przez BDiIS sekcja: 2 2019<span id="actual-year"></span></span>
+    </div>
+    <div id="status"></div>
+</div>
+</body>
+<datalist id="lposition">
+    <option value="BR">Bramkarz</option>
+    <option value="PO">Prawy obrońca</option>
+    <option value="ŚO">Środkowy obrońca</option>
+    <option value="LO">Lewy obrońca</option>
+    <option value="CPS">Cofnięty prawy skrzydłowy</option>
+    <option value="CLS">Cofnięty lewy skrzydłowy</option>
+    <option value="ŚPD">Środkowy pomocnik defensywny</option>
+    <option value="ŚP">Środkowy pomocnik</option>
+    <option value="ŚPO">Środkowy pomocnik ofensywny</option>
+    <option value="PP">Prawy pomocnik</option>
+    <option value="LP">Lewy pomocnik</option>
+    <option value="PS">Prawy skrzydłowy</option>
+    <option value="LS">Lewy skrzydłowy</option>
+    <option value="ŚN">Środkowy napastnik</option>
+    <option value="N">Napastnik</option>
+</datalist>
+<datalist id="lclubs"></datalist>
+<datalist id="lmatches"></datalist>
+<datalist id="lplayers"></datalist>
+<script src="index.js"></script> 
+</html> 

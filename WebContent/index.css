@@ -1,0 +1,54 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Calibri;
+    display: block;
+}
+#main{
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    border-spacing: 0px;
+}
+#header{
+    border: 5px solid whitesmoke;
+    border-bottom-width: 0px;
+}
+#footer{
+    font-size: 10pt;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: right;
+    clear: both;
+}
+#status{
+    max-height: 100px;
+    height: auto;
+    width: 75%;
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 7.5%;
+    opacity: 1;
+}
+#status span:first-child{
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+#status span:first-child:hover{
+    color: pink;
+}
+.error{
+    color: red;
+    text-transform: uppercase;
+}
+.contentData{
+    display:inline-block;
+    margin-bottom: 5px;
+}
